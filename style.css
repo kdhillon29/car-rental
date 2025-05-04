@@ -65,7 +65,7 @@ header {
   width: 40%;
   height: 100vh;
 
-  background-image: url("/assets/banner_image.png");
+  background-image: url("assets/banner_image.png");
   background-position: top;
   background-size: cover;
   object-fit: cover;
