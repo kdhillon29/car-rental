@@ -22,6 +22,11 @@ body {
 a {
   text-decoration: none;
   color: var(--col-black);
+  &:hover {
+    color: var(--col-primary);
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+  }
 }
 li {
   text-decoration: none;
@@ -39,6 +44,8 @@ header {
   overflow-y: hidden;
 }
 .container {
+  width: 100%;
+  height: 100%;
   padding: 80px 0;
 }
 .row {
@@ -54,7 +61,7 @@ header {
   color: var(--col-primary);
 }
 
-.banner {
+.header__bg {
   width: 40%;
   height: 100vh;
 
@@ -69,21 +76,13 @@ header {
 }
 /* navbar */
 
-.nav {
+nav {
   width: 100%;
-
   position: absolute;
   z-index: 2;
   top: 0;
   left: 0;
   right: 0;
-  /* margin: 0 auto;
-
-  display: flex;
-  justify-content: space-between;
-
-  align-items: center; */
-  /* background-color: #ff4d30; */
 }
 
 .nav__row {
@@ -194,24 +193,21 @@ header {
 /*  header hero */
 
 .header__row {
-  display: flex;
-  margin-top: 30px;
-  padding: 58px 18px;
-  /* background: thistle; */
+  margin-top: 60px;
 
-  /* justify-content: space-between; */
+  display: flex;
   align-items: center;
   position: relative;
 }
 .header__text {
-  width: 45%;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 12px;
+  max-width: 500px;
 }
 
 .header__text__subtitle {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
 }
 
@@ -220,8 +216,6 @@ header {
   font-weight: 700;
   line-height: 1.2;
   & > span {
-    font-size: inherit;
-
     color: var(--col-primary);
   }
 }
