@@ -419,3 +419,34 @@ header {
   font-size: 48px;
   color: var(--col-primary);
 }
+/* download section */
+
+#download {
+  background-image: url(assets/download-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.download__row {
+  width: 100%;
+  height: 100%;
+}
+.download__text {
+  display: flex;
+  flex-direction: column;
+  max-width: 550px;
+  gap: 28px;
+}
+.download__text__title {
+  font-size: 42px;
+}
+.download__text__para {
+  color: var(--col-gray);
+}
+.download__text__links {
+  display: flex;
+  gap: 32px;
+}
+.download__text__link {
+  width: 40%;
+}
