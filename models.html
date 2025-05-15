@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="models.css" />
     <script src="index.js"></script>
     <script src="models.js" defer></script>
     <script
@@ -13,25 +14,25 @@
     ></script>
   </head>
   <body>
-    <nav>
-      <div class="nav__container">
-        <a href="#" class="nav__img__wrapper">
-          <img src="assets/logo.png" alt="" class="nav__img" />
+    <nav class="nav">
+      <div class="row nav__row">
+        <a href="index.html" class="nav__img__wrapper">
+          <img src="assets/car-logo.png" class="nav__logo" alt="logo" />
         </a>
-        <div class="nav__links">
-          <a href="index.html" class="nav__link">Home</a>
-          <a href="#" class="nav__link">About</a>
-          <a href="models.html" class="nav__link">Vehicle Models</a>
-          <a href="#" class="nav__link">Testimonials</a>
-          <a href="#" class="nav__link">Our Team</a>
-          <a href="#" class="nav__link">Contact</a>
-        </div>
+        <ul class="nav__links">
+          <li class="nav__link"><a href="index.html">Home</a></li>
+          <li class="nav__link"><a href="#">About</a></li>
+          <li class="nav__link"><a href="models.html">Vehicle Models</a></li>
+          <li class="nav__link"><a href="#">Testimonials</a></li>
+          <li class="nav__link"><a href="#">Our Team</a></li>
+          <li class="nav__link"><a href="#">Contact</a></li>
+        </ul>
         <div class="nav__btns">
-          <a class="nav__link" href="#"> Sign In </a>
-          <button class="nav__btns__register">Register</button>
+          <button class="nav__btn">Sign In</button>
+          <button class="nav__btn">Register</button>
         </div>
         <button class="nav__menu" onclick="openMenu()">
-          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
         </button>
       </div>
     </nav>
