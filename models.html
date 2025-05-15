@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="models.css" />
-    <script src="index.js"></script>
+    <script src="app.js" defer></script>
     <script src="models.js" defer></script>
     <script
       src="https://kit.fontawesome.com/fc0b80239e.js"
@@ -69,7 +69,10 @@
           <div class="row models__row">
             <div class="models__header">
               <h2 class="models__header__title">Vehicle Models</h2>
-              <select class="models__header__sort" onchange="renderModels()">
+              <select
+                class="models__header__sort"
+                onchange="CarModel.renderModels()"
+              >
                 <option
                   class="models__header__sort__option"
                   value=""
