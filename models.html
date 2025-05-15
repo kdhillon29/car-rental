@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+    <script src="models.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/fc0b80239e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__container">
+        <a href="#" class="nav__img__wrapper">
+          <img src="assets/logo.png" alt="" class="nav__img" />
+        </a>
+        <div class="nav__links">
+          <a href="index.html" class="nav__link">Home</a>
+          <a href="#" class="nav__link">About</a>
+          <a href="models.html" class="nav__link">Vehicle Models</a>
+          <a href="#" class="nav__link">Testimonials</a>
+          <a href="#" class="nav__link">Our Team</a>
+          <a href="#" class="nav__link">Contact</a>
+        </div>
+        <div class="nav__btns">
+          <a class="nav__link" href="#"> Sign In </a>
+          <button class="nav__btns__register">Register</button>
+        </div>
+        <button class="nav__menu" onclick="openMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <nav class="menu">
+      <button class="menu__close" onclick="closeMenu()">
+        <i class="fa-solid fa-x"></i>
+      </button>
+      <div class="menu__links">
+        <a href="index.html" class="menu__link" onclick="closeMenu()">Home</a>
+        <a href="#" class="menu__link" onclick="closeMenu()">About</a>
+        <a href="models.html" class="menu__link" onclick="closeMenu()"
+          >Vehicle Models</a
+        >
+        <a href="#" class="menu__link" onclick="closeMenu()">Testimonials</a>
+        <a href="#" class="menu__link" onclick="closeMenu()">Our Team</a>
+        <a href="#" class="menu__link" onclick="closeMenu()">Contact</a>
+      </div>
+    </nav>
+
+    <header id="hero">
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="row hero__row">
+          <h1 class="hero__title">Vehicle Models</h1>
+          <h2 class="hero__subtitle">Home / Vehicle Models</h2>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="models">
+        <div class="container">
+          <div class="row models__row">
+            <div class="models__header">
+              <h2 class="models__header__title">Vehicle Models</h2>
+              <select class="models__header__sort" onchange="renderModels()">
+                <option
+                  class="models__header__sort__option"
+                  value=""
+                  disabled
+                  selected
+                >
+                  Sort
+                </option>
+                <option
+                  class="models__header__sort__option"
+                  value="HIGH_TO_LOW"
+                >
+                  Price (High to low)
+                </option>
+                <option
+                  class="models__header__sort__option"
+                  value="LOW_TO_HIGH"
+                >
+                  Price (Low to high)
+                </option>
+                <option class="models__header__sort__option" value="RATING">
+                  Rating (High to low)
+                </option>
+              </select>
+            </div>
+            <div class="models__list" id="models-list">
+              <div class="model">
+                <img src="assets/model-img.png" alt="" class="model__img" />
+                <div class="model__details model__details-1">
+                  <h3 class="model__details__name">Toyota Camry</h3>
+                  <h4 class="model__details__price">
+                    $25 <span class="model__details__price__span">per day</span>
+                  </h4>
+                </div>
+                <div class="model__details model__details-2">
+                  <div class="model__detail model__detail__rating">
+                    <i class="model__detail__icon fa-solid fa-star"></i>
+                    <span class="model__detail__text">4.5 / 5</span>
+                  </div>
+                  <div class="model__detail model__detail-right">
+                    <i class="model__detail__icon fa-solid fa-car"></i>
+                    <span class="model__detail__text">2023</span>
+                  </div>
+                  <div class="model__detail">
+                    <i class="model__detail__icon fa-solid fa-car"></i>
+                    <span class="model__detail__text">Toyota</span>
+                  </div>
+                  <div class="model__detail model__detail-right">
+                    <i class="model__detail__icon fa-solid fa-car"></i>
+                    <span class="model__detail__text">Manual</span>
+                  </div>
+                </div>
+                <button class="model__btn">
+                  <span class="model__btn__span">Book Ride</span>
+                  <i class="fa-regular fa-circle-check model__btn__icon"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="row footer__row">
+          <div class="footer__intro footer__content">
+            <h4 class="footer__intro__title"><b>CAR</b> Rental</h4>
+            <p class="footer__intro__para">
+              We offer a big range of vehicles for all your driving needs. We
+              have the perfect car to meet your needs.
+            </p>
+            <div class="footer__intro__links">
+              <a href="tel:123456789" class="footer__intro__link">
+                <i class="fa-solid fa-phone footer__intro__link__icon"></i>
+                <span class="footer__intro__link__span"> (123) -456-789 </span>
+              </a>
+              <a href="mailto:carrental@gmail.com" class="footer__intro__link">
+                <i class="fa-solid fa-envelope footer__intro__link__icon"></i>
+                <span class="footer__intro__link__span">
+                  carrental@gmail.com
+                </span>
+              </a>
+              <a href="https://xpeedstudio.com/" class="footer__intro__link">
+                Design by XpeedStudio
+              </a>
+            </div>
+          </div>
+          <div class="footer__company footer__content">
+            <h4 class="footer__company__title">Company</h4>
+            <div class="footer__company__links">
+              <a href="#" class="footer__company__link"> New York </a>
+              <a href="#" class="footer__company__link"> Careers </a>
+              <a href="#" class="footer__company__link"> Mobile </a>
+              <a href="#" class="footer__company__link"> Blog </a>
+              <a href="#" class="footer__company__link"> How we work </a>
+            </div>
+          </div>
+          <div class="footer__hours footer__content">
+            <h4 class="footer__hours__title">Working hours</h4>
+            <div class="footer__hours__list">
+              <span class="footer__hours__time">
+                Mon - Fri: 9:00AM - 9:00PM
+              </span>
+              <span class="footer__hours__time"> Sat: 9:00AM - 19:00PM </span>
+              <span class="footer__hours__time"> Sun: Closed </span>
+            </div>
+          </div>
+          <div class="footer__email footer__content">
+            <h4 class="footer__email__title">Subscription</h4>
+            <p class="footer__email__para">
+              Subscribe your Email address for latest news & updates.
+            </p>
+            <form action="#" class="footer__email__form">
+              <input
+                type="email"
+                placeholder="Enter Email Address"
+                class="footer__email__form__input"
+              />
+              <button class="footer__email__form__submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
