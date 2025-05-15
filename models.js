@@ -1,3 +1,5 @@
+///class for  handling car model fetch and display
+
 class CarModel {
   static url = "https://car-rental-api.up.railway.app/car";
   static models = [];
@@ -8,9 +10,9 @@ class CarModel {
 
       const data = await response.json();
 
-      return data.data;
+      this.models = data.data;
     } catch (error) {
-      alert.message = "Failed to fetch car models";
+      alert("Failed to fetch car models");
       console.log(error);
     }
   }
@@ -21,7 +23,7 @@ class CarModel {
 
     modelsList.innerHTML = `<i class="fa-solid fa-spinner models__list__spinner"></i>`;
 
-    this.models = await this.fetchModels();
+    await this.fetchModels();
 
     if (modelsFilter === "HIGH_TO_LOW") {
       this.models.sort((a, b) => b.per_day_price - a.per_day_price);
@@ -81,7 +83,7 @@ document.addEventListener("DOMContentLoaded", async (event) => {
 
     await CarModel.renderModels();
   } catch (error) {
-    alert("Failed to load Models");
+    // alert("Failed to load Models");
     console.log(error);
   }
 });
