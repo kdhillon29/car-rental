@@ -393,7 +393,9 @@
   MODELS PAGE
   
   */
-
+  #hero {
+    height: 250px;
+  }
   .model__details-1 {
     flex-direction: column;
   }
