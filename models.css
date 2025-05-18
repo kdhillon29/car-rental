@@ -3,8 +3,9 @@
 /* Hero */
 
 .nav {
-  background: rgb(224, 227, 219, 0.5);
+  background: rgb(224, 227, 219, 0.2);
   height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 #hero {
   background-image: url("assets/hero-bg.png");
