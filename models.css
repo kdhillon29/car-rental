@@ -3,7 +3,8 @@
 /* Hero */
 
 .nav {
-  background: rgb(224, 227, 219, 0.8);
+  background: rgb(224, 227, 219, 0.5);
+  height: auto;
 }
 #hero {
   background-image: url("assets/hero-bg.png");
@@ -22,7 +23,7 @@
   right: 0;
   bottom: 0;
   background: rgba(211, 61, 166, 0.7);
-  filter: grayscale(80%);
+  filter: grayscale(70%);
 }
 
 .hero__row {
@@ -30,12 +31,16 @@
   z-index: 3;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
+  align-items: start;
   gap: 4px;
+  margin-top: 50px;
+  color: aliceblue;
+  font-weight: 400;
 }
 
 .hero__title {
-  font-size: 36px;
+  font-size: 28px;
 }
 
 .hero__subtitle {
